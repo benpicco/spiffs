@@ -174,7 +174,7 @@ static s32_t _write(
 #if SPIFFS_HAL_CALLBACK_EXTRA
     spiffs *fs,
 #endif
-    u32_t addr, u32_t size, u8_t *src) {
+    u32_t addr, u32_t size, const u8_t *src) {
   int i;
   //printf("wr %08x %i\n", addr, size);
   if (log_flash_ops) {
